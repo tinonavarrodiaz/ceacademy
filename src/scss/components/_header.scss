@@ -1,0 +1,129 @@
+.main-header{
+  width: 100%;
+  background-color: $body-bg;
+  // background-color: lime;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0 1em;
+  position: fixed;
+  // background-color: lightblue;
+  left: 50%;
+  z-index: 1000;
+  top: 0;
+  transform: translateX(-50%);
+  transition: all .3s;
+  * {
+    transition: all .3s;
+
+  }
+  &__container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: var(--header-height);
+    display: flex;
+    column-gap: 3%;
+    justify-content: flex-start;
+    align-items: center;
+    @include from(l){
+      width: 90%;
+    }
+
+    & > a{
+      width: auto;
+      height: 20%;
+      img{
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+  .hamburger{
+    transform-origin: center;
+    transform: scale(.7);
+  }
+}
+
+.main-menu{
+  position: absolute;
+  top: var(--header-height);
+  left: 0;
+  z-index: 100;
+  background-color: var(--color-main);
+  color: var(--body-bg);
+  text-transform: uppercase;
+  padding-left: 1em;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  li{
+    line-height: 3em;
+  }
+  a{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  &.is-active{
+    max-height: 15em;
+  }
+  @include from(l){
+    --mr: 1em;
+    background-color: unset;
+    position: unset;
+    max-height: unset;
+    overflow: unset;
+    display:  flex;
+    color: inherit;
+    // @include from(lg){
+    //   font-size: 80%;
+
+    // }
+    @include from(xl){
+      font-size: 80%;
+    }
+    & .main-menu__item{
+      margin-right: var(--mr);
+      &.selected, & a:hover{
+        background-color: var(--color-main);
+        color: $body-bg;
+        border-radius: .3rem;
+      }
+    }
+    & .main-menu__link{
+      padding: 0 1em;
+      transition: all .3s linear;
+    }
+  }
+}
+
+.main-header .aside{
+  margin-left: auto;
+  display: flex;
+  .car-content{
+    display: flex;
+    column-gap: .5em;
+    margin-right: 1.5em;
+    align-items: center;
+  }
+  .cart-count{
+    background-color: #010101;
+    color: #fdfdfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    font-size: .8em;
+  }
+}
+.button-courses{
+  background-color: var(--color-main);
+  color: #fdfdfd;
+  line-height: 3em;
+  padding: 0 1.3em;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}

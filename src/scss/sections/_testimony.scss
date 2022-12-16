@@ -1,0 +1,19 @@
+#Testimony, #Banner{
+  background-color: var(--color-main);
+  color: #fefefe;
+  margin-top: var(--header-height);
+}
+.Testimony, .Banner{
+  padding-top: 2em;
+  padding-bottom: 2em;
+  @include from(lg){
+    padding: 10vh 0;
+  }
+}
+.Banner{
+  margin-bottom: 2em;
+  @include from(lg){
+    margin-bottom: 10vh;
+
+  }
+}

@@ -1,0 +1,50 @@
+---
+
+const path = import.meta.env.PROD
+  ? `${import.meta.env.SITE}${import.meta.env.BASE_URL}`
+  : `${import.meta.env.BASE_URL}`;
+
+---
+
+<footer class="main-footer">
+  <div class="main-footer__container">
+    <div class="main-footer__data">
+        <img src={`${path}img/logo-dark1.png`} alt="Logo" />
+      <ul class="social-network">
+        <li>
+          <a href="#">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.69 29.27"><defs><style>.cls-1{fill:var(--color-icon);fill-rule:evenodd;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path class="cls-1" d="M9,8.77V6.42A1.23,1.23,0,0,1,10.32,5h3.29V0H9.08c-5,0-6.16,3.72-6.16,6.13V8.77H0v5.86H3V29.27H8.81V14.63h4.34l.19-2.31.35-3.55Z"/></g></g></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.05 29.05"><defs><style>.cls-1{fill:var(--color-icon);}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path class="cls-1" d="M14.52,5A9.48,9.48,0,1,0,24,14.52,9.49,9.49,0,0,0,14.52,5Zm7,9.48a7,7,0,1,1-7-7A7,7,0,0,1,21.5,14.52Z"/><path class="cls-1" d="M23.52,3.8A1.78,1.78,0,1,0,25.3,5.58,1.78,1.78,0,0,0,23.52,3.8Z"/><path class="cls-1" d="M22,0H7A7,7,0,0,0,0,7V22a7,7,0,0,0,7,7H22a7,7,0,0,0,7-7V7A7,7,0,0,0,22,0Zm4.75,7V22A4.75,4.75,0,0,1,22,26.78H7A4.75,4.75,0,0,1,2.28,22V7A4.75,4.75,0,0,1,7,2.28H22A4.75,4.75,0,0,1,26.78,7Z"/></g></g></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.2 21.76"><defs><style>.cls-1{fill:var(--color-icon);fill-rule:evenodd;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path class="cls-1" d="M27.2,2.58a12,12,0,0,1-3.2.87A5.48,5.48,0,0,0,26.46.4a11.53,11.53,0,0,1-3.55,1.34,5.61,5.61,0,0,0-9.67,3.75,5.63,5.63,0,0,0,.17,1.25A15.83,15.83,0,0,1,1.9,1a5.58,5.58,0,0,0-.76,2.76A5.48,5.48,0,0,0,3.61,8.33a5.27,5.27,0,0,1-2.52-.68v.08a5.21,5.21,0,0,0,.38,2A5.58,5.58,0,0,0,5.58,13.1a5.62,5.62,0,0,1-1.48.2,5.27,5.27,0,0,1-1-.11A5.64,5.64,0,0,0,8.26,17a11.27,11.27,0,0,1-6.92,2.35A12,12,0,0,1,0,19.29a16.1,16.1,0,0,0,8.55,2.47A15.54,15.54,0,0,0,24.06,9.45a15.11,15.11,0,0,0,.36-3.31V5.43A11.58,11.58,0,0,0,27.2,2.58Z"/></g></g></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.82 29.78"><defs><style>.cls-1{fill:var(--color-icon);fill-rule:evenodd;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path class="cls-1" d="M29.8,14.14A14.62,14.62,0,0,0,.58,13.87a4.29,4.29,0,0,0,0,.63A14.5,14.5,0,0,0,2.65,22L0,29.78l8.11-2.56A14.78,14.78,0,0,0,15.18,29,14.57,14.57,0,0,0,29.82,14.5c0-.13,0-.23,0-.36Zm-7.92,3.3c-.37-.18-2.11-1.05-2.44-1.18s-.58-.18-.82.19a15.83,15.83,0,0,1-1.13,1.38c-.21.25-.42.27-.76.11a9.13,9.13,0,0,1-2.9-1.78,10.4,10.4,0,0,1-2-2.44c-.19-.39,0-.55.15-.76a4.86,4.86,0,0,0,.55-.61,1,1,0,0,0,.12-.16,3.42,3.42,0,0,0,.23-.42.57.57,0,0,0,0-.62c-.07-.18-.79-2-1.1-2.65s-.6-.6-.79-.6-.46,0-.7,0a1.23,1.23,0,0,0-.95.45A3.84,3.84,0,0,0,8,11.3a3.68,3.68,0,0,0,.21,1.19A8.11,8.11,0,0,0,9.5,15c.18.24,2.48,3.94,6.13,5.36s3.67.94,4.31.89a3.57,3.57,0,0,0,2.43-1.7,2.85,2.85,0,0,0,.19-1.69,1.86,1.86,0,0,0-.68-.39Zm-6.7,9.27a12.25,12.25,0,0,1-6.76-2L3.7,26.2l1.52-4.54A12.12,12.12,0,0,1,2.88,14.5a9.23,9.23,0,0,1,.06-1.18,12.31,12.31,0,0,1,24.5.22c0,.33,0,.65,0,1A12.27,12.27,0,0,1,15.18,26.71Z"/></g></g></svg>
+
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="newsletter">
+        <div class="newsletter__header">
+          <img src={`${path}/img/newsletter.svg`} alt="Logo" />
+          <h2>Suscríbete a nuestro newsletter</h2>
+        </div>
+        <form action="#" class="newsletter__form">
+          <input type="email" name="email" id="email" placeholder="Escribe tu email">
+          <button type="submit" class="btn btn-dark">Suscribirme</button>
+        </form>
+
+
+    </div>
+  </div>
+</footer>

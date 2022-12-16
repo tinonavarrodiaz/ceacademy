@@ -1,0 +1,42 @@
+---
+const path = import.meta.env.PROD
+  ? `${import.meta.env.SITE}${import.meta.env.BASE_URL}`
+  : `${import.meta.env.BASE_URL}`;
+---
+<section class="section Why" id="Estudiar">
+  <h2>¿Por qué estudiar con nosotros?</h2>
+  <div class="Why__container col-2">
+    <div class="left-side">
+      <div class="Why__item">
+        <img src={`${path}img/why-us1.svg`} alt="">
+        <div>
+          <h2>Maestros de clase mundial</h2>
+          <p>Lorem ipsum dolor sit amet, consecteturirem adipiscing elit. Volutpat quis molestie tortorerm, gravida a aenean neque. Placerat</p>
+        </div>
+      </div>
+      <div class="Why__item">
+        <img src={`${path}img/why-us2.svg`} alt="">
+        <div>
+          <h2>Cursos de primera categoría</h2>
+          <p>Lorem ipsum dolor sit amet, consecteturirem adipiscing elit. Volutpat quis molestie tortorerm, gravida a aenean neque. Placerat</p>
+        </div>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="Why__item">
+        <img src={`${path}img/why-us3.svg`} alt="">
+        <div>
+          <h2>Comunidad Global de Estudiantes</h2>
+          <p>Lorem ipsum dolor sit amet, consecteturirem adipiscing elit. Volutpat quis molestie tortorerm, gravida a aenean neque. Placerat</p>
+        </div>
+      </div>
+      <div class="Why__item">
+        <img src={`${path}img/why-us4.svg`} alt="">
+        <div>
+          <h2>Tutoría individual</h2>
+          <p>Lorem ipsum dolor sit amet, consecteturirem adipiscing elit. Volutpat quis molestie tortorerm, gravida a aenean neque. Placerat</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

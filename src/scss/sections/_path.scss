@@ -1,0 +1,37 @@
+.Path{
+  h2{
+    text-align: center;
+  }
+  &__copy{
+    text-align: center !important;
+    margin-bottom: 2em;
+  }
+  &__card{
+    margin-bottom: 2em;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    @include from(l){
+      margin-bottom: 0;
+    }
+    img{
+      width: 50%;
+      margin: 0 auto;
+    }
+    figcaption{
+      line-height: 2em ;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    .footer-card{
+      display: flex;
+      justify-content: center;
+    }
+    .Path__card--body{
+      text-align: center;
+      margin-bottom: 10%;
+    }
+  }
+}
