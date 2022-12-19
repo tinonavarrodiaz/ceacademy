@@ -12,7 +12,7 @@
       }
       span{
         --accent: 324, 58, 237;
-        --accent-gradient: linear-gradient(45deg, var(--color-main), #007fc3 30%, white 60%);
+        --accent-gradient: linear-gradient(45deg, #{darken(#3434ff,20)}, #007fc3 30%, white 60%);
         background-image: var(--accent-gradient);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
